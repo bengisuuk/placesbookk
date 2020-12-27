@@ -6,3 +6,20 @@
 //
 
 import Foundation
+import UIKit
+//sadece benim belirttiğim obje oluşabiliyor.
+//Singleton
+class PlaceModel{
+    static let sharedInstance = PlaceModel()
+    
+    var placeName = ""
+    var placeType = ""
+    var placeComment = ""
+    var placeImage = UIImage()
+    var placeLatitude = ""
+    var placeLongitude = ""
+    
+    private init(){
+        
+    }
+}
