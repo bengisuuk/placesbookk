@@ -18,9 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let configuration = ParseClientConfiguration { (ParseMutableClientConfiguration) in
             
             // app id,client ey ve serverı tanımalamam lazım
-            ParseMutableClientConfiguration.applicationId = "UstirzgGaEk3fDCVQic4pI95vEKNMdHLAOf65dmn"
-            ParseMutableClientConfiguration.clientKey = "tETG5hamOHjPDjtNXdet8JNAmahM2Slt2wFLUgvD"
-            ParseMutableClientConfiguration.server = "https://parseapi.back4app.com/"
+            ParseMutableClientConfiguration.applicationId = "yourAppid"
+            ParseMutableClientConfiguration.clientKey = "youtClientKey"
+            ParseMutableClientConfiguration.server = "yourServer"
         }
         Parse.initialize(with: configuration)
         return true
